@@ -7,5 +7,7 @@ snapshot/*
 public/
 artifacts*
 
-# IDEs config 
+# IDEs config
 .idea
+
+arduino-create-agent
