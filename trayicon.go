@@ -102,7 +102,7 @@ func getConfigs() []ConfigIni {
 func setupSysTrayReal() {
 
 	systray.SetIcon(icon.GetIcon())
-	mUrl := systray.AddMenuItem("Go to Arduino Create", "Arduino Create")
+	mUrl := systray.AddMenuItem("Go to Strawbees CODE", "Strawbees CODE")
 	mDebug := systray.AddMenuItem("Open debug console", "Debug console")
 	menuVer := systray.AddMenuItem("Agent version "+version+"-"+git_revision, "")
 	mPause := systray.AddMenuItem("Pause Plugin", "")
@@ -166,7 +166,7 @@ func setupSysTrayReal() {
 	go func() {
 		for {
 			<-mUrl.ClickedCh
-			open.Start("http://create.arduino.cc")
+			open.Start("http://code.strawbees.com")
 		}
 	}()
 }
