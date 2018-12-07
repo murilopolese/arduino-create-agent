@@ -408,8 +408,9 @@ body {
     margin: 0;
     width: 100%;
     height: 100%;
-    background: #00979d;
-    font-family: 'Lucida Grande', Lucida, Verdana, sans-serif;
+    background: rgba(244, 66, 176, 0.75);
+	font-size: 1.2em;
+    font-family: monospace;
 }
 
 #log {
